@@ -6,9 +6,10 @@ describe('Player', function() {
     const testPlayer = new Player("Jack");
     expect(testPlayer.name).toEqual("Jack");
   });
+  
   it('should be able to create a new character based on inputted parameters', function() {
     const testPlayer = new Player("Jack");
-    testPlayer.addCharacter({name: "Something", hp: 10});
+    testPlayer.addCharacter({name: "Something", hp: 10, powers: ["sword", "whip"]});
     expect(testPlayer.character.name).toEqual("Something");
     expect(testPlayer.character.maxHP).toEqual(10);
     expect(testPlayer.character.currentHP).toEqual(10);
