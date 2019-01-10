@@ -1,4 +1,4 @@
-import { Character, defaultCharacters } from './../src/character.js';
+import { Character, defaultCharacters, level1Powers, level2Powers } from './../src/character.js';
 
 
 describe('Character', function() {
@@ -39,8 +39,14 @@ describe('Character', function() {
   });
 
   it('should be able to reset current HP of character back to max on battle over', function(){
-      testCharacter.changeHP(4);
-      testCharacter.resetHP();
-      expect(testCharacter.currentHP).toEqual(10);
+    testCharacter.changeHP(4);
+    testCharacter.resetHP();
+    expect(testCharacter.currentHP).toEqual(10);
+  });
+
+  it('level up the character based on input from user interface', function(){
+    testCharacter.levelUp(level1Powers);
+    expect(testCharacter.powers).toEqual(["sword", "whip", "batbite", "triple corn"]);
+    expect(testCharacter.level).toEqual(1);
   });
 });

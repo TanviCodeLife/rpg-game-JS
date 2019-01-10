@@ -39,6 +39,10 @@ export class Battle {
       }
       if(!this.nextPlayer.character.isDead()) {
         this.changeTurn();
+      } else {
+        this.playerOne.character.resetHP();
+        this.playerTwo.character.resetHP();
+        return "Battle Over!"
       }
     }
   }
