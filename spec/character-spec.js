@@ -9,7 +9,6 @@ describe('Character', function() {
   let testCharacter = null;
   beforeEach(function() {
     testCharacter = new Character({name: "Something", hp: 10, powers: ["sword", "whip"]});
-    console.log("beforeEach", testCharacter);
   });
 
   it('should create a character with default values', function() {

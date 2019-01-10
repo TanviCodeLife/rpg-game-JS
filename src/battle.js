@@ -7,9 +7,11 @@ export class Battle {
     this.playerTwo = playerTwo;
     this.currentPlayer = playerOne;
     this.nextPlayer = playerTwo;
+    
     // this.playerOneCharacter = this.playerOne.character;
     // this.playerTwoCharacter = this.playerTwo.character;
   }
+
 
   changeTurn() {
     if(this.currentPlayer === this.playerOne) {
@@ -46,4 +48,6 @@ export class Battle {
       }
     }
   }
+
+
 }
