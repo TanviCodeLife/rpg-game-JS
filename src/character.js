@@ -27,7 +27,7 @@ export class Character {
   }
 
   levelUp(nextLevelPowers) {
-    this.powers.concat(nextLevelPowers);
+    this.powers = this.powers.concat(nextLevelPowers);
     this.level++;
   }
 }

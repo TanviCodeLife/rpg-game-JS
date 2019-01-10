@@ -1,4 +1,7 @@
-import { Character, defaultCharacters, level1Powers, level2Powers } from './../src/character.js';
+import { Character } from './../src/character.js';
+import { defaultCharacters } from './../src/character.js';
+import { level1Powers } from './../src/character.js';
+import { level2Powers } from './../src/character.js';
 
 
 describe('Character', function() {
@@ -6,7 +9,7 @@ describe('Character', function() {
   let testCharacter = null;
   beforeEach(function() {
     testCharacter = new Character({name: "Something", hp: 10, powers: ["sword", "whip"]});
-
+    console.log("beforeEach", testCharacter);
   });
 
   it('should create a character with default values', function() {
