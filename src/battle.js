@@ -7,7 +7,10 @@ export class Battle {
     this.playerTwo = playerTwo;
     this.currentPlayer = playerOne;
     this.nextPlayer = playerTwo;
-    
+    // this.playerOnePos = "pos1";           
+    // this.playerTwoPos = "pos2";
+    // this.playerOneCurr = "";
+    // this.playerTwoCurr = "";
     // this.playerOneCharacter = this.playerOne.character;
     // this.playerTwoCharacter = this.playerTwo.character;
   }
